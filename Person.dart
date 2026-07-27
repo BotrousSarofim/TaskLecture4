@@ -5,6 +5,11 @@ class Person
 
   // Short  Constructor
   Person(this.name, this.age);
+  // Method that modifies the object's internal state
+  void haveBirthday() 
+  {
+    age++; // Increases the instance's age field by 1
+  }
 
 }
 
@@ -47,4 +52,18 @@ void main()
    print ("---------------------------------------------------------------\n");
   people.forEach((person) => print("Name: ${person.name}, Age: ${person.age}"));
 
+//================================== Task 3  ( Add 1 to each person's age)====================================
+
+print ("\n\n --------------------Task 3  ( Add 1 to each person's age)---------------------\n");
+for (var person in people) 
+ {
+
+  print("\n\nBefore birthday: ${person.name} is ${person.age} years old.");
+
+  // Call the method to trigger the age increase
+  person.haveBirthday();
+
+  // Print age after calling the method
+  print("After birthday:  ${person.name} is ${person.age} years old.\n\n");
+ }
 }
