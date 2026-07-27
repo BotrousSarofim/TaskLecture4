@@ -9,11 +9,13 @@ class Car {
     this.brand = brand;
     this.year = year;
   }
-} //  
+} 
+
+//  Main Function 
 
 void main() {
-  print("    Car  Details   ");
-  print("===================");
+  print("                                       Cars  Details   ");
+  print("                                    ===================\n");
 
   Car car1 = Car("Fiat", 1988);
   Car car2 = Car("Opel", 2022);
